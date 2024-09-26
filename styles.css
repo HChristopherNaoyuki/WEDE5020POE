@@ -1,0 +1,215 @@
+/* 
+    Filename: styles.css
+    Description: This CSS file provides the styling for the Math and Language Synergy website.
+    It defines the layout, typography, and visual elements for the site, ensuring a clean, minimalistic,
+    and responsive design for both desktop and mobile screens.
+*/
+
+/* Global Reset - Ensuring consistent margin, padding, and box-sizing across browsers */
+* 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Simplifies width calculations for elements */
+}
+
+/* Body - Clean and spacious layout with subtle contrast */
+body 
+{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f5f5f7; /* Light grey background for clarity and professionalism */
+    color: #1d1d1f; /* Dark text for optimal readability */
+    line-height: 1.6;
+    padding: 0;
+    margin: 0;
+    transition: background-color 0.3s ease; /* Smooth transitions for enhanced user experience */
+}
+
+/* Header - Focus on simplicity and visual clarity */
+header 
+{
+    background-color: #ffffff; /* Crisp white background for a clean and modern look */
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1); /* Light shadow for subtle depth */
+}
+
+header .logo img 
+{
+    width: 120px; /* Optimal size for clarity and visibility across devices */
+    height: auto;
+}
+
+header h1 
+{
+    font-size: 2.5em; /* Bold and prominent main heading */
+    color: #1d1d1f; /* Strong contrast for the title */
+    margin-bottom: 10px;
+    font-weight: 500; /* Semi-bold for a refined look */
+}
+
+header p 
+{
+    font-size: 1.2em; /* Soft subtitle to complement the main title */
+    color: #6e6e73; /* Gentle grey tone for less dominant text */
+}
+
+/* Navigation - Clean, minimal navigation bar */
+nav ul 
+{
+    list-style: none; /* Removing default bullet points for a streamlined look */
+    padding: 0;
+}
+
+nav ul a 
+{
+    text-decoration: none;
+    margin: 0 20px; /* Adequate spacing between navigation items */
+    color: #0070c9; /* Accent color for links */
+    font-size: 1.1em;
+    font-weight: 400; /* Regular weight for an understated, clean style */
+    transition: color 0.2s ease; /* Smooth hover effect for interactivity */
+}
+
+nav ul a:hover 
+{
+    color: #005bb5; /* Darker shade for hover state */
+}
+
+/* Main Content - Generous padding and focus on clear presentation */
+main 
+{
+    padding: 40px;
+    max-width: 1200px; /* Constrained width for readability on large screens */
+    margin: 0 auto; /* Center content for desktop viewports */
+}
+
+/* Headings - Structured typography with subtle hierarchy */
+h2 
+{
+    font-size: 2em;
+    color: #1d1d1f; /* Strong, clear headings */
+    margin-bottom: 20px;
+    font-weight: 500; /* Semi-bold for emphasis */
+}
+
+h3 
+{
+    font-size: 1.8em;
+    color: #333333; /* Secondary headings in a softer tone */
+    margin-top: 15px;
+    font-weight: 500;
+}
+
+/* Paragraphs - Legible and structured for reading ease */
+p 
+{
+    font-size: 1em;
+    color: #515154; /* Balanced text color for comfortable reading */
+    margin-bottom: 20px; /* Adequate spacing between paragraphs */
+}
+
+/* Gallery Section - Organized, spacious, and visually engaging */
+.gallery 
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Equal spacing between gallery items */
+    margin-top: 40px;
+}
+
+.gallery-item 
+{
+    background-color: #ffffff; /* Clean white background for content separation */
+    border: 1px solid #e0e0e0; /* Subtle border for defined edges */
+    border-radius: 16px; /* Rounded corners for a refined, modern touch */
+    margin-bottom: 20px;
+    padding: 20px;
+    width: calc(33% - 20px); /* Three-column layout with spacing */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05); /* Soft shadow to add depth */
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth hover effect for interactivity */
+}
+
+.gallery-item:hover 
+{
+    transform: scale(1.03); /* Slight zoom to highlight interaction */
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1); /* Enhanced shadow on hover */
+}
+
+.gallery-item img 
+{
+    width: 100%; /* Full width for responsive behavior */
+    height: auto; /* Maintain aspect ratio for images */
+    border-radius: 12px; /* Rounded corners to match the card */
+    object-fit: cover;
+}
+
+.gallery-item h2 
+{
+    font-size: 1.5em;
+    margin: 10px 0;
+    color: #1d1d1f; /* Clear and concise headings within gallery items */
+}
+
+.gallery-item p 
+{
+    font-size: 1em;
+    color: #6e6e73; /* Secondary text for descriptions */
+    line-height: 1.6;
+}
+
+.caption 
+{
+    font-style: italic;
+    font-size: 0.9em;
+    color: #8e8e93; /* Light grey for captions */
+}
+
+/* Footer - Minimal footer with subtle elegance */
+footer 
+{
+    background-color: #f8f8f8;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9em;
+    color: #6e6e73;
+}
+
+footer a 
+{
+    color: #0070c9; /* Consistent link color */
+}
+
+footer a:hover 
+{
+    color: #005bb5; /* Slightly darker hover effect for links */
+}
+
+/* Media Queries - Responsive adjustments for different screen sizes */
+@media (max-width: 960px) 
+{
+    main 
+    {
+        padding: 20px;
+    }
+
+    .gallery-item 
+    {
+        width: calc(50% - 20px); /* Adjust to two-column layout for medium screens */
+    }
+}
+
+@media (max-width: 768px) 
+{
+    .gallery-item 
+    {
+        width: calc(100% - 20px); /* Adjust to single-column layout for small screens */
+    }
+}
+
+/* Smooth animations for an interactive and refined experience */
+a,
+button 
+{
+    transition: color 0.2s ease, background-color 0.2s ease, transform 0.2s ease;
+}
