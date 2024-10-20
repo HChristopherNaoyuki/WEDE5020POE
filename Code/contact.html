@@ -22,6 +22,11 @@
         </div>
         <h1>Math and Language Synergy</h1>
         <p>Where Language Meets Logic</p>
+        <div class="hamburger-menu" id="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
         <nav>
             <ul>
                 <a href="index.html">Home</a>
@@ -32,11 +37,6 @@
                 <a href="contact.html">Contact Us</a>
                 <a href="assets.html">Assests</a> 
             </ul>
-            <div class="hamburger-menu" id="menu-toggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
         </nav>
     </header>
 
@@ -53,16 +53,16 @@
 
         <!-- Question Form -->
         <section class="question-form">
-            <h2>Ask a Question</h2>
-            <form action="submit_form.php" method="post">
+        <h2>Ask a Question</h2>
+            <form id="contactForm" method="post">
                 <label for="name">Your Name:</label>
-                <input type="text" id="name" name="name" required>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
 
                 <label for="email">Your Email:</label>
-                <input type="email" id="email" name="email" required>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
 
                 <label for="question">Your Question:</label>
-                <textarea id="question" name="question" rows="5" required></textarea>
+                <textarea id="question" name="question" rows="5" placeholder="Enter your question" required></textarea>
 
                 <button type="submit">Submit</button>
             </form>
@@ -83,7 +83,11 @@
     <footer>
         <p>&copy; 2024 Math and Language Synergy. All rights reserved.</p>
         <p>All images created using <a href="https://www.canva.com/" target="_blank">Canva</a> and <a href="https://www.pexels.com/" target="_blank">Pexels</a>.</p>
-    </footer>      
+    </footer>
+    
+    <!-- Link to external JS file -->
+    <script src="form-validation.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>

@@ -272,14 +272,15 @@ a:hover
 /* Hide the navigation list initially on mobile */
 #nav-list 
 {
-    display: block;
+    display: block; /* Default state */
 }
 
 #nav-list.show 
 {
-    display: none;
+    display: flex; /* Show when class 'show' is added */
+    flex-direction: column; /* Stack items vertically */
     position: absolute;
-    top: 60px;
+    top: 60px; /* Adjust as needed */
     right: 0;
     background-color: #fff;
     width: 100%;
@@ -290,8 +291,8 @@ a:hover
 {
     nav ul 
     {
-        display: none;
-        flex-direction: column;
+        display: none; /* Hide by default on mobile */
+        flex-direction: column; /* Stack items vertically */
     }
 
     nav ul a 
@@ -309,14 +310,10 @@ a:hover
 
     .hamburger-menu 
     {
-        display: flex;
-    }
-
-    #nav-list.show 
-    {
-        display: flex;
+        display: flex; /* Show hamburger menu */
     }
 }
+
 
 /* Form Styling */
 form 
@@ -356,4 +353,18 @@ form button
 form button:hover 
 {
     background-color: #0056b3;
+}
+
+/* Style the newsletter section */
+#newsletter-signup 
+{
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+}
+
+#newsletter-signup iframe 
+{
+    border-radius: 10px;
+    border: 1px solid #ccc;
 }
