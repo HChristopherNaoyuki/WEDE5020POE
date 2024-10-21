@@ -35,18 +35,35 @@ header p
     color: #666;
 }
 
+nav 
+{
+    text-align: center;
+}
+
 nav ul 
 {
-    list-style: none;
     padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: center;
+    align-items: center;
+}
+
+@media (min-width: 768px) 
+{
+    nav ul 
+    {
+        flex-direction: row;
+        justify-content: center;
+    }
 }
 
 nav ul a 
 {
+    display: inline-block;
+    padding: 10px 15px;
     text-decoration: none;
-    margin: 0 10px;
-    color: #333;
-    font-size: 1.1em;
+    color: #333; /* Adjust color as needed */
 }
 
 nav ul a:hover 
@@ -367,4 +384,84 @@ form button:hover
 {
     border-radius: 10px;
     border: 1px solid #ccc;
+}
+
+/* Mobile Menu Styles */
+nav ul
+{
+    display: none; /* Hidden by default for mobile */
+    flex-direction: column; /* Stack the items vertically */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul.show
+{
+    display: flex; /* Display the menu when 'show' class is applied */
+}
+
+.hamburger-menu
+{
+    display: flex; /* Display hamburger on mobile */
+    cursor: pointer;
+    z-index: 1000; /* Keep it on top of other content */
+}
+
+/* Media query to ensure nav list is always visible on larger screens */
+@media (min-width: 768px)
+{
+    nav ul
+    {
+        display: flex; /* Display menu in row by default on larger screens */
+        flex-direction: row;
+    }
+
+    .hamburger-menu
+    {
+        display: none; /* Hide hamburger menu on larger screens */
+    }
+}
+
+/* */
+.social-media 
+{
+    background-color: #f8f8f8;
+    padding: 2rem;
+    border-radius: 8px;
+    margin: 2rem 0;
+}
+
+.social-icons 
+{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.social-icons a 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover 
+{
+    color: #555;
+}
+
+.social-icons i 
+{
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.social-icons span 
+{
+    font-size: 0.9rem;
 }
