@@ -1,215 +1,415 @@
-/* 
-    Filename: styles.css
-    Description: This CSS file provides the styling for the Math and Language Synergy website.
-    It defines the layout, typography, and visual elements for the site, ensuring a clean, minimalistic,
-    and responsive design for both desktop and mobile screens.
-*/
+/* Global Styles */
 
-/* Global Reset - Ensuring consistent margin, padding, and box-sizing across browsers */
-* 
-{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box; /* Simplifies width calculations for elements */
-}
-
-/* Body - Clean and spacious layout with subtle contrast */
+/* Reset body margins and padding, set base styles for font and colors */
 body 
 {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-    background-color: #f5f5f7; /* Light grey background for clarity and professionalism */
-    color: #1d1d1f; /* Dark text for optimal readability */
-    line-height: 1.6;
-    padding: 0;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
-    transition: background-color 0.3s ease; /* Smooth transitions for enhanced user experience */
+    padding: 0;
+    background-color: #ffffff;
+    color: #333;
+    line-height: 1.6;
+    display: flex; /* To center the content */
+    flex-direction: column;
+    align-items: center; /* Horizontally center content */
 }
 
-/* Header - Focus on simplicity and visual clarity */
+/* Header Styling */
+
+/* Set header background color, padding, and text alignment */
 header 
 {
-    background-color: #ffffff; /* Crisp white background for a clean and modern look */
+    background-color: #f4f4f4;
     padding: 20px;
     text-align: center;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.1); /* Light shadow for subtle depth */
+    width: 100%;
 }
 
+/* Style the logo image inside the header */
 header .logo img 
 {
-    width: 120px; /* Optimal size for clarity and visibility across devices */
+    width: 100px;
     height: auto;
 }
 
+/* Style the header title */
 header h1 
 {
-    font-size: 2.5em; /* Bold and prominent main heading */
-    color: #1d1d1f; /* Strong contrast for the title */
-    margin-bottom: 10px;
-    font-weight: 500; /* Semi-bold for a refined look */
+    font-size: 2.5em;
+    margin: 10px 0;
+    color: #333;
 }
 
+/* Style the header paragraph text */
 header p 
 {
-    font-size: 1.2em; /* Soft subtitle to complement the main title */
-    color: #6e6e73; /* Gentle grey tone for less dominant text */
+    font-size: 1.2em;
+    color: #666;
 }
 
-/* Navigation - Clean, minimal navigation bar */
+/* Navigation Menu */
+
+/* Remove default list styling for nav items */
 nav ul 
 {
-    list-style: none; /* Removing default bullet points for a streamlined look */
+    list-style: none;
     padding: 0;
+    display: flex;
+    justify-content: center; /* Center the navigation menu */
 }
 
+/* Set anchor link styling */
 nav ul a 
 {
     text-decoration: none;
-    margin: 0 20px; /* Adequate spacing between navigation items */
-    color: #0070c9; /* Accent color for links */
+    margin: 0 10px;
+    color: #333;
     font-size: 1.1em;
-    font-weight: 400; /* Regular weight for an understated, clean style */
-    transition: color 0.2s ease; /* Smooth hover effect for interactivity */
 }
 
+/* Change anchor link color on hover */
 nav ul a:hover 
 {
-    color: #005bb5; /* Darker shade for hover state */
+    color: #007bff;
 }
 
-/* Main Content - Generous padding and focus on clear presentation */
+/* Main Content Styling */
+
+/* Apply padding to the main content area */
 main 
 {
-    padding: 40px;
-    max-width: 1200px; /* Constrained width for readability on large screens */
-    margin: 0 auto; /* Center content for desktop viewports */
+    padding: 20px;
+    width: 100%;
+    max-width: 1200px; /* Limit max width for better readability */
 }
 
-/* Headings - Structured typography with subtle hierarchy */
+/* Section Headings */
+
+/* Style h2 headers in sections */
 h2 
 {
     font-size: 2em;
-    color: #1d1d1f; /* Strong, clear headings */
-    margin-bottom: 20px;
-    font-weight: 500; /* Semi-bold for emphasis */
+    color: #333;
+    margin-top: 20px;
 }
 
+/* Style h3 headers in sections */
 h3 
 {
     font-size: 1.8em;
-    color: #333333; /* Secondary headings in a softer tone */
+    color: #444;
     margin-top: 15px;
-    font-weight: 500;
 }
 
-/* Paragraphs - Legible and structured for reading ease */
+/* Paragraph Styling */
+
+/* Style paragraph text */
 p 
 {
     font-size: 1em;
-    color: #515154; /* Balanced text color for comfortable reading */
-    margin-bottom: 20px; /* Adequate spacing between paragraphs */
+    color: #555;
+    margin: 10px 0;
 }
 
-/* Gallery Section - Organized, spacious, and visually engaging */
+/* Unordered List Styling */
+
+/* Remove default padding for ul */
+ul 
+{
+    list-style-type: none;
+    padding-left: 0;
+}
+
+/* Style list items in ul */
+ul li 
+{
+    margin-bottom: 15px;
+}
+
+/* Style strong text inside list items */
+ul li strong 
+{
+    font-size: 1.1em;
+}
+
+/* Address Styling */
+
+/* Style the address element */
+address 
+{
+    font-style: normal;
+    line-height: 1.5;
+}
+
+/* Footer Styling */
+
+/* Style the footer area */
+footer 
+{
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 0.9em;
+    color: #555;
+    width: 100%;
+}
+
+/* Link Styling */
+
+/* Set default link color and remove underline */
+a 
+{
+    color: #007bff;
+    text-decoration: none;
+}
+
+/* Add underline on hover */
+a:hover 
+{
+    text-decoration: underline;
+}
+
+/* Hero Section Styling */
+
+/* Style the hero section background and text */
+.hero 
+{
+    background: url('../Gallery/hero-bg.jpg') no-repeat center center/cover;
+    color: #fff;
+    padding: 100px 20px;
+    text-align: center;
+    width: 100%;
+}
+
+/* Style h2 in the hero section */
+.hero-content h2 
+{
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+/* Style paragraph text in the hero section */
+.hero-content p 
+{
+    font-size: 1.5em;
+}
+
+/* Call-to-action Button Styling */
+
+/* Style the call-to-action button */
+.cta-button 
+{
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+}
+
+/* Change the background color of the button on hover */
+.cta-button:hover 
+{
+    background-color: #0056b3;
+}
+
+/* Gallery Section Styling */
+
+/* Display gallery items in a flexible grid */
 .gallery 
 {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between; /* Equal spacing between gallery items */
-    margin-top: 40px;
+    justify-content: center; /* Center gallery items */
+    margin: 20px;
+    width: 100%;
+    max-width: 1200px; /* Limit max width */
 }
 
+/* Style individual gallery items */
 .gallery-item 
 {
-    background-color: #ffffff; /* Clean white background for content separation */
-    border: 1px solid #e0e0e0; /* Subtle border for defined edges */
-    border-radius: 16px; /* Rounded corners for a refined, modern touch */
-    margin-bottom: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 10px;
     padding: 20px;
-    width: calc(33% - 20px); /* Three-column layout with spacing */
-    box-shadow: 0 4px 12px rgba(0,0,0,0.05); /* Soft shadow to add depth */
-    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth hover effect for interactivity */
+    width: calc(33% - 40px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
 }
 
+/* Add hover effect on gallery items */
 .gallery-item:hover 
 {
-    transform: scale(1.03); /* Slight zoom to highlight interaction */
-    box-shadow: 0 8px 16px rgba(0,0,0,0.1); /* Enhanced shadow on hover */
+    transform: translateY(-5px);
 }
 
+/* Style images inside gallery items */
 .gallery-item img 
 {
-    width: 100%; /* Full width for responsive behavior */
-    height: auto; /* Maintain aspect ratio for images */
-    border-radius: 12px; /* Rounded corners to match the card */
+    width: 100%;
+    height: 300px;
     object-fit: cover;
+    border-radius: 8px;
 }
 
+/* Style the title in gallery items */
 .gallery-item h2 
 {
     font-size: 1.5em;
     margin: 10px 0;
-    color: #1d1d1f; /* Clear and concise headings within gallery items */
 }
 
+/* Style paragraph text in gallery items */
 .gallery-item p 
 {
     font-size: 1em;
-    color: #6e6e73; /* Secondary text for descriptions */
     line-height: 1.6;
 }
 
-.caption 
+/* Style the caption text in gallery items */
+.gallery-item .caption 
 {
     font-style: italic;
     font-size: 0.9em;
-    color: #8e8e93; /* Light grey for captions */
+    color: #777;
+    margin-top: 10px;
 }
 
-/* Footer - Minimal footer with subtle elegance */
-footer 
-{
-    background-color: #f8f8f8;
-    text-align: center;
-    padding: 20px;
-    font-size: 0.9em;
-    color: #6e6e73;
-}
+/* Media Queries for Responsiveness */
 
-footer a 
-{
-    color: #0070c9; /* Consistent link color */
-}
-
-footer a:hover 
-{
-    color: #005bb5; /* Slightly darker hover effect for links */
-}
-
-/* Media Queries - Responsive adjustments for different screen sizes */
+/* Adjust gallery layout for screens narrower than 960px */
 @media (max-width: 960px) 
 {
-    main 
-    {
-        padding: 20px;
-    }
-
     .gallery-item 
     {
-        width: calc(50% - 20px); /* Adjust to two-column layout for medium screens */
+        width: calc(50% - 40px);
+    }
+    
+    .hero-content h2 
+    {
+        font-size: 2.2em;
+    }
+
+    .hero-content p 
+    {
+        font-size: 1.2em;
     }
 }
 
+/* Adjust gallery layout for screens narrower than 768px */
 @media (max-width: 768px) 
 {
     .gallery-item 
     {
-        width: calc(100% - 20px); /* Adjust to single-column layout for small screens */
+        width: calc(50% - 40px);
     }
 }
 
-/* Smooth animations for an interactive and refined experience */
-a,
-button 
+/* Adjust gallery layout for screens narrower than 480px */
+@media (max-width: 480px) 
 {
-    transition: color 0.2s ease, background-color 0.2s ease, transform 0.2s ease;
+    .gallery-item 
+    {
+        width: calc(100% - 40px);
+    }
+}
+
+/* Hamburger Menu */
+
+/* Hide the navigation list initially */
+nav ul 
+{
+    display: none; /* Hide by default on mobile */
+    flex-direction: column; /* Stack items vertically */
+}
+
+/* Show the navigation menu when the 'show' class is added */
+nav ul.show 
+{
+    display: flex;
+}
+
+/* Style the hamburger menu for mobile */
+.hamburger-menu 
+{
+    display: flex; /* Display hamburger on mobile */
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    flex-direction: column;
+    z-index: 1000; /* Ensure it stays on top */
+}
+
+/* Style the individual lines of the hamburger menu */
+.hamburger-menu span 
+{
+    background-color: #333;
+    height: 4px;
+    width: 25px;
+    margin: 5px 0;
+    display: block;
+}
+
+/* Always show the navigation menu on larger screens */
+@media (min-width: 768px) 
+{
+    nav ul 
+    {
+        display: flex; /* Display the menu in a row */
+        flex-direction: row;
+    }
+
+    .hamburger-menu 
+    {
+        display: none; /* Hide the hamburger menu on larger screens */
+    }
+}
+
+/* Form Styling */
+
+/* Style form elements */
+form 
+{
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 20px auto; /* Center form */
+}
+
+/* Style labels in forms */
+form label 
+{
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Style input and textarea elements */
+form input, form textarea 
+{
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+/* Style the submit button */
+form button 
+{
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+/* Change button color on hover */
+form button:hover 
+{
+    background-color: #0056b3;
 }
