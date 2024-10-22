@@ -46,20 +46,21 @@ The **Math and Language Synergy** website is designed to provide an engaging and
 ## File Structure
 
 ```
-.
-├── index.html
-├── about.html
-├── services.html
-├── news.html
-├── gallery.html
-├── contact.html
-├── assets.html
-├── styles.css
-├── script.js
-├── form-validation.js
-├── Gallery/ (images folder)
-├── LICENSE.md
-└── README.md
+Code/
+ ├── index.html
+ ├── about.html 
+ ├── services.html
+ ├── news.html
+ ├── gallery.html
+ ├── contact.html
+ ├── assets.html
+ ├── styles.css
+ ├── script.js
+ └── form-validation.js
+Gallery/
+Process Document/
+LICENSE.md
+README.md
 ```
 
 ### Key Files:
