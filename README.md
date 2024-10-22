@@ -58,7 +58,7 @@ The **Math and Language Synergy** website is designed to provide an engaging and
 ├── script.js
 ├── form-validation.js
 ├── Gallery/ (images folder)
-├── LICE
+├── LICENSE.md
 └── README.md
 ```
 
