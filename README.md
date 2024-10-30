@@ -270,11 +270,3 @@ Example:
     <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfxxx/formResponse" width="100%" height="500"></iframe>
 </section>
 ```
-
-## License
-
-This project is licensed under **All Rights Reserved**.
-
-You are not allowed to copy, modify, or distribute the code or content without explicit permission from the owner.
-
-For inquiries, contact: naoyuki.higaki.academic.za@gmail.com
