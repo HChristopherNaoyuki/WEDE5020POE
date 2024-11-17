@@ -58,7 +58,6 @@ Code/
  ├── script.js
  └── form-validation.js
 Gallery/
-LICENSE.md
 README.md
 ```
 
